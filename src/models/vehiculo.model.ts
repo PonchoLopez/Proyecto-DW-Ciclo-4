@@ -1,4 +1,4 @@
-import {Entity, model, property, hasOne} from '@loopback/repository';
+import {Entity, hasOne, model, property} from '@loopback/repository';
 import {Pedidos} from './pedidos.model';
 
 @model()
@@ -32,7 +32,19 @@ export class Vehiculo extends Entity {
     type: 'string',
     required: true,
   })
-  tipo: string;
+  marca: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  color: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  cilindraje: string;
 
   @hasOne(() => Pedidos)
   pedidos: Pedidos;
