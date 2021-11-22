@@ -1,3 +1,4 @@
+import { authenticate } from '@loopback/authentication';
 import {
   Count,
   CountSchema,
@@ -20,11 +21,13 @@ import {
 import {Pedidos} from '../models';
 import {PedidosRepository} from '../repositories';
 
+@authenticate('cliente')
 export class PedidoController {
   constructor(
     @repository(PedidosRepository)
     public pedidosRepository : PedidosRepository,
   ) {}
+
 
   @post('/pedidos')
   @response(200, {
@@ -58,6 +61,7 @@ export class PedidoController {
     return this.pedidosRepository.count(where);
   }
 
+  @authenticate('cliente')
   @get('/pedidos')
   @response(200, {
     description: 'Array of Pedidos model instances',

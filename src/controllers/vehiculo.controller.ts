@@ -15,7 +15,10 @@ import {
 import {Vehiculo} from '../models';
 import {VehiculoRepository} from '../repositories';
 
-@authenticate('admin')
+
+
+
+@authenticate('admin', 'asesor')
 export class VehiculoController {
   constructor(
     @repository(VehiculoRepository)
