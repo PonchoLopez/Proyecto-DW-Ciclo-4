@@ -1,0 +1,68 @@
+body{
+    background-image: url('/src/Frontend/Bootstrap/images/auto.jpg');
+    background-size: 100vw 100vw;
+    background-attachment: fixed;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    }
+
+form {
+    width: 600px;
+    margin: auto;
+    background: rgba(218, 225, 238, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 2%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+/*textarea, label, select {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    border: none;
+    height: 60px;
+    padding: 2%;
+
+
+    letter-spacing: .05rem;
+
+}*/
+
+
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384A;
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+
+}
+
+
+#boton:hover{
+    cursor:pointer;
+}
+

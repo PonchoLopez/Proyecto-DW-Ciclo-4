@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="homepage.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/56fda5b69b.js" crossorigin="anonymous"></script>
+  <title>Alquil.app</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <section id="logo">
+        <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+          <img src="/src/Frontend/Bootstrap/images/alquilapp.png" alt="Logo">
+        </ul>
+      </section>
+      <a class="navbar-brand" href="#">Ingresar</a>
+      <input type="button" onclick="registrarse()" value="Registrarse">
+
+      <script>
+        function registrarse() {
+          open('http://127.0.0.1:5500/src/Frontend/Bootstrap/Index/index.html');
+        }
+      </script>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Recursos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">Promociones</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Noticias y videos</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section id="pantalla-dividida">
+    <div class="izquierda">
+      <div class="vehi">
+        <h2>VEÍCULOS</h2>
+      </div>
+
+
+      <!--<p class="text-muted "><b>VEÍCULOS</b></p>-->
+      <div class="d-grid">
+
+        <button class="btn btn-light" type="button">Renaul</button>
+
+        <button class="btn btn-light" type="button">Chevrolet</button>
+
+        <button class="btn btn-light" type="button">Mazda</button>
+
+        <button class="btn btn-light" type="button">Nissan</button>
+
+        <button class="btn btn-light" type="button">Toyota</button>
+
+        <button class="btn btn-light" type="button">Mercedes-Benz</button>
+
+        <button class="btn btn-light" type="button">Audi</button>
+
+        <div class="mb-3"></div>
+      </div>
+    </div>
+
+    <div class="derecha">
+      <div class="mb-3"></div>
+      <h1>Bienvenido a Alquil.app</h1>
+      <div class="mb-5"></div>
+      <section>
+
+        <div class="contenedor">
+          <article>
+            <img src="/src/Frontend/Bootstrap/images/Mercedes-Benz.jpg">
+            <h3>Mercedes-Benz</h3>
+          </article>
+
+          <article>
+            <img src="/src/Frontend/Bootstrap/images/Audi.jpg">
+            <h3>Audi</h3>
+          </article>
+
+          <article>
+            <img src="/src/Frontend/Bootstrap/images/Mercedes-Benz2.jpg">
+            <h3> Mercedes-Benz</h3>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="contenedor1">
+          <article>
+            <img src="/src/Frontend/Bootstrap/images/Mercedes-Benz.jpg">
+            <h3>Mercedes-Benz</h3>
+          </article>
+
+          <article>
+            <img src="/src/Frontend/Bootstrap/images/Audi.jpg">
+            <h3>Audi</h3>
+          </article>
+
+          <article>
+            <img src="/src/Frontend/Bootstrap/images/Mercedes-Benz2.jpg">
+            <h3> Mercedes-Benz</h3>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="/src/Frontend/Bootstrap/images/alquilapp.png" alt="Logo">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h4>SOBRE NOSOTROS</h4>
+        <p>Mision</p>
+        <p>Vision</p>
+        <p>Valores y Principios Corporativos</p>
+      </div>
+      <div class="box">
+        <h4>SIGUENOS</h4>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2021 <b>Alquil.app</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
