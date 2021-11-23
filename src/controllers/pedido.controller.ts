@@ -1,32 +1,26 @@
-import { authenticate } from '@loopback/authentication';
+import {authenticate} from '@loopback/authentication';
 import {
   Count,
   CountSchema,
   Filter,
   FilterExcludingWhere,
   repository,
-  Where,
+  Where
 } from '@loopback/repository';
 import {
-  post,
-  param,
-  get,
-  getModelSchemaRef,
-  patch,
-  put,
-  del,
-  requestBody,
-  response,
+  del, get,
+  getModelSchemaRef, param, patch, post, put, requestBody,
+  response
 } from '@loopback/rest';
 import {Pedidos} from '../models';
 import {PedidosRepository} from '../repositories';
 
-@authenticate('cliente')
+@authenticate('cliente', 'admin')
 export class PedidoController {
   constructor(
     @repository(PedidosRepository)
-    public pedidosRepository : PedidosRepository,
-  ) {}
+    public pedidosRepository: PedidosRepository,
+  ) { }
 
 
   @post('/pedidos')
