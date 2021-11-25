@@ -1,0 +1,64 @@
+:root {
+    --color-light: #ffffff;
+    --color-light-x: #f4f6f8;
+    --color-light-xx: #d1d3d8;
+    --color-light-xxx: #dae2f0;
+    --color-dark:#000000;
+}
+body {
+    font-size: 'roboto', sans-serif;
+    font-size:1.1rem;
+    font-weight: 300;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    letter-spacing: .05rem;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-light-x {
+    background-color: var(--color-light-x)!important;
+}
+
+.p-6{
+    padding: 4rem 7rem;
+}
+
+.contact-box {
+    padding: 5rem;
+}
+
+.btn {
+    font-weight: 200;
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+    min-width: 5rem;
+}
+
+.btn-outline-light {
+    border: 2px solid var(--color-light-xx);
+    background-color: var(--color-light-x);
+
+
+}
+
+.form-control {
+    background-color: var(--color-light-xxx);
+    border: 2px solid var(--color-light-xx);
+    border-radius: .2rem;
+    padding: .4rem 1rem;
+}
+
+.register-bg {
+    background-image: url('/images/auto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1.5rem 1rem;
+}
+
+.testiomonial {
+    bottom: 10px
+}
+
