@@ -81,60 +81,72 @@
                 class="icon ion-logo-google lead align-middle mr-2"></i> Google </button>
           </div>
           <p class="text-muted mb-5">Ingresa la siguiente información para registrarte como cliente.</p>
-          <form>
-            <div class="form-row mb-2">
-
-
-              <div class="form-group col-md-6">
-                <label class="font-weight-bold">Cedula <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" placeholder="Tu cedula" id="cedula" name="cedula" required
-                  autofocus>
+        
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="txtCedula" class="form-label">Cedula</label>
+              <input type="text" class="form-control" id="txtCedula"  required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio
               </div>
+            </div>
 
-              <div class="form-group col-md-6">
-                <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" placeholder="Tu nombre" id="nombre" name="nombre" required
-                  autofocus>
+            <div class="col-md-4">
+              <label for="txtNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="txtNombre" required>
+              <div class="valid-feedback">
+                Este campo es obligatorio
               </div>
-
-              <div class="form-group col-md-6">
-                <label class="font-weight-bold">Apellidos <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" placeholder="Tus apellidos" id="apellidos" name="apellidos"
-                  required autofocus>
+            </div>
+            <div class="col-md-4">
+              <label for="txtApellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="txtApellidos" required>
+              <div class="valid-feedback">
+                Este campo es obligatorio
               </div>
-
-
-              <div class="form-group col-md-6">
-                <label class="font-weight-bold">Correo electrónico <span class="text-danger">*</span></label>
-                <!--<label for="validationDefaultUsername" class="form-label">Username</label>-->
-                <div class="input-group">
-                  <span class="input-group-text" id="txtCorreo">@</span>
-                  <input type="email" class="form-control" placeholder="Ingresa tu correo electronico" id="txtCorreo"
-                    aria-describedby="inputGroupPrepend2" id="correo" name="correo" required autofocus>
+            </div>
+            <div class="col-md-4">
+              <label for="txtCorreo" class="form-label">Correo</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="email" class="form-control" id="txtCorreo" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                 <div class="invalid-feedback">
+                  Ingrese un correo valido.
                 </div>
               </div>
-
-
-              <div class="form-group col-md-6">
-                <label class="font-weight-bold">Celular <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" placeholder="Ingresa tu numero celular" id="celular"
-                  name="celular" required autofocus>
+            </div>
+            <div class="col-md-6">
+              <label for="txtCelular" class="form-label">Celular</label>
+              <input type="text" class="form-control" id="txtCelular" aria-describedby="validationServer03Feedback" required>
+              <div id="validationServer03Feedback" class="invalid-feedback">
+                Este campo es obligatorio
               </div>
-
-              <div class="form-group col-md-6">
-                <label class="font-weight-bold">Contraseña <span class="text-danger">*</span></label>
-                <input type="password" class="form-control" placeholder="Ingresa una contraseña" id="contraseña"
-                  name="contraseña" required autofocus>
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
               </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
 
-              <div class="mb-3">
+              <!--<div class="mb-3">
                 <div class="g-recaptcha" data-sitekey="6Le320odAAAAAOlgXMKxwxYGrerzi3bQfcLxTOeQ"></div>
                 <br />
-                <div id="status"></div>
+                <div id="status"></div>-->
 
 
-                <!--button type="submit" name="submit" class="btn btn-primary width-100" onclick="registrarse()" value="Registrarse">Registrarse</button>-->
-                <input type="button" onclick="registrarse()" value="Registrarse">
+                <!--button type="submit" name="submit" class="btn btn-primary width-100" onclick="registrarse()" value="Registrarse">Registrarse</!--button>-->
+                 <!--<input type="button" onclick="registrarse()" value="Registrarse">
 
                 <script>
                   function registrarse() {
@@ -144,10 +156,9 @@
                     else
                       document.getElementById('status').innerHTML = "Acepta el captcha primero.";
                   }
-                </script>
+                </script>-->
 
           </form>
-
         </div>
 
       </div>
@@ -156,7 +167,7 @@
 
   </section>
 
-
+  <script type="text/JavaScript" src="/Index/recursos/funciones.js"></script>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
