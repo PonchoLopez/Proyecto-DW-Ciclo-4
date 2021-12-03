@@ -3,17 +3,20 @@
       <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a routerLink="/inicio">Inicio</a></li>
-        <li><a routerLink="/administracion/personas">Usuario</a></li>
-        <li><a routerLink="/seguridad/cambioclave">Cambie su contraseña</a></li>
-        <li><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
+        <li *ngIf ="sesionIniciada"><a routerLink="/inicio">Inicio</a></li>
+        <li *ngIf ="sesionIniciada"><a routerLink="/administracion/personas">Usuario</a></li>
+        <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cambioclave">Cambie su contraseña</a></li>
+        <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar sesión</a></li>
+        <li *ngIf ="!sesionIniciada"><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
     <li><a routerLink="/inicio">Inicio</a></li>
-        <li><a routerLink="/administracion/personas">Usuario</a></li>
-        <li><a routerLink="/seguridad/cambioclave">Cambie su contraseña</a></li>
-        <li><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
+    <li *ngIf ="sesionIniciada"><a routerLink="/inicio">Inicio</a></li>
+    <li *ngIf ="sesionIniciada"><a routerLink="/administracion/personas">Usuario</a></li>
+    <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cambioclave">Cambie su contraseña</a></li>
+    <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar sesión</a></li>
+    <li *ngIf ="!sesionIniciada"><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
   </ul>
