@@ -1,6 +1,6 @@
 # Angular
 
-Se logró imlementar la parte de inicio de sesión y además se relaizó la codificación para el registro de la persona en la aplicacion web, sin embargo, no se logró la comunicación entre el formulario y el backend.
+Se logró imlementar la parte de inicio de sesión y además se realizó la codificación para el registro de la persona en la aplicacion web, sin embargo, no se logró la comunicación entre el formulario y el backend.
 
 
 # venta
