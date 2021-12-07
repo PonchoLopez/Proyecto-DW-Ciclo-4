@@ -48,7 +48,7 @@ export class VehiculoController {
   }
 
   // este metodo va a estar libre
-  @authenticate.skip()
+
   @get('/vehiculos/count')
   @response(200, {
     description: 'Vehiculo model count',
@@ -60,6 +60,7 @@ export class VehiculoController {
     return this.vehiculoRepository.count(where);
   }
 
+  @authenticate.skip()
   @get('/vehiculos')
   @response(200, {
     description: 'Array of Vehiculo model instances',
@@ -96,7 +97,7 @@ export class VehiculoController {
   ): Promise<Count> {
     return this.vehiculoRepository.updateAll(vehiculo, where);
   }
-
+  @authenticate.skip()
   @get('/vehiculos/{id}')
   @response(200, {
     description: 'Vehiculo model instance',

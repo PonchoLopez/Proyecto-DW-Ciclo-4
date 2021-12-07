@@ -1,3 +1,4 @@
+import {authenticate} from '@loopback/authentication';
 import {service} from '@loopback/core';
 import {
   Count,
@@ -30,7 +31,7 @@ export class PersonaController {
   @post('/identificarPersona', {
     responses: {
       '200': {
-        description: "identificacionde usuarios"
+        description: "identificacion de usuarios"
       }
     }
   })
@@ -104,6 +105,7 @@ export class PersonaController {
     return this.personaRepository.count(where);
   }
 
+  @authenticate.skip()
   @get('/personas')
   @response(200, {
     description: 'Array of Persona model instances',
