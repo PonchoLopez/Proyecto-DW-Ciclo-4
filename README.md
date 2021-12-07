@@ -1,3 +1,8 @@
+# Angular
+
+Se logró imlementar la parte de inicio de sesión y además se realizó la codificación para el registro de la persona en la aplicacion web, sin embargo, no se logró la comunicación entre el formulario y el backend.
+
+
 # venta
 
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
