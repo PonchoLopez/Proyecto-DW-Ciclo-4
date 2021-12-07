@@ -12,6 +12,7 @@ import { PersonaService } from 'src/app/servicios/persona.service';
 export class CrearPersonaComponent implements OnInit {
 
     fgValidador: FormGroup = this.fb.group({
+      'id': ['', [Validators.required]],
       'cedula': ['', [Validators.required]],
       'nombre': ['', [Validators.required]],
       'apellidos': ['', [Validators.required]],
@@ -27,22 +28,24 @@ export class CrearPersonaComponent implements OnInit {
   }
 
   GuardarPersona(){
+    let id = this.fgValidador.controls["id"].value;
     let cedula = this.fgValidador.controls["cedula"].value;
     let nombre= this.fgValidador.controls["nombre"].value;
     let apellidos = this.fgValidador.controls["apellidos"].value;
     let correo = this.fgValidador.controls["correo"].value;
     let celular = this.fgValidador.controls["celular"].value;
     let p = new ModeloPersona();
+    p.id = id;
     p.cedula = cedula;
     p.nombre = nombre;
     p.apellidos = apellidos;
     p.correo = correo;
     p.celular = celular;
-this.servicioPersona.CrearPersona(p).subscribe((datos: ModeloPersona) =>{
-  alert("persona registrada correctamente");
-  this.router.navigate(["/administracion/personas"]);
-}, (error: any) =>{
-  alert("error registrando la persona");
-}) 
+    this.servicioPersona.CrearPersona(p).subscribe((datos: ModeloPersona) =>{
+      alert("persona registrada correctamente");
+      this.router.navigate(["/administracion/personas"]);
+    }, (error: any) =>{
+      alert("error registrando la persona");
+    }) 
   }
 }

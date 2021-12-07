@@ -25,13 +25,15 @@ export class PersonaService {
 
   // }
 
-  //ObtenerRegistros(): Observable<ModeloPersona[]>{
-  //return this.http.get<ModeloPersona[]>(`${this.url}/personas`);
-  //}
+  ObtenerRegistros(): Observable<ModeloPersona[]>{
+  return this.http.get<ModeloPersona[]>(`${this.url}/personas`);
+  }
 
   CrearPersona(persona: ModeloPersona): Observable<ModeloPersona>{
-    return this.http.post<ModeloPersona>(`${this.url}/personas`, persona,  )
-   
+    return this.http.post<ModeloPersona>(`${this.url}/personas`, persona,  
+    {
+      headers: new HttpHeaders()
+    })
   
   }
 

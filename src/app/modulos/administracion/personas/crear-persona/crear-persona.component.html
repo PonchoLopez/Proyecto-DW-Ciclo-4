@@ -3,27 +3,27 @@
     <form [formGroup]="fgValidador" (ngSubmit)="GuardarPersona()" method="POST" action="formulario-contacto.php">
       <div class="row">
         <div class="input-field col s6">
-            <input formControlName="Cedula" type="text" class="validate">
+            <input formControlName="cedula" type="text" class="validate">
             <label for="Cedula">Cedula</label>
         </div>
         <div class="input-field col s6">
-          <input formControlName="Nombre" type="text" class="validate">
+          <input formControlName="nombre" type="text" class="validate">
           <label for="Nombre">Nombre</label>
         </div>
         <div class="input-field col s6">
-          <input formControlName="Apellidos" type="text" class="validate">
+          <input formControlName="apellidos" type="text" class="validate">
           <label for="Apellidos">Apellidos</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input formControlName="Correo" type="email" class="validate">
+          <input formControlName="correo" type="email" class="validate">
           <label for="Correo">Correo</label>
         </div>
       </div>
       <div class="row">
       <div class="input-field col s6">
-        <input formControlName="Celular" type="text" class="validate">
+        <input formControlName="celular" type="text" class="validate">
         <label for="Celular">Celular</label>
       </div>
     </div>

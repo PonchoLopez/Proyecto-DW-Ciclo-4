@@ -73,7 +73,7 @@ export class SeguridadService {
       let datos =JSON.parse(datosString);
       return datos.tk;
     }else{
-      return '';
+      return "";
     }
   }
 

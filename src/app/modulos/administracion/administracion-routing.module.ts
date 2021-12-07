@@ -26,14 +26,21 @@ const routes: Routes = [
     path:"buscar-persona",
     component:BuscarPersonaComponent
   },
+
+  {
+    path:"buscar-producto",
+    component:BuscarProductoComponent
+  },
+  
   {
     path:"crear-producto",
     component:CrearProductoComponent
   },
   {
-    path:"editar-producto",
+    path:"editar-producto/:id",
     component:EditarProductoComponent
   },
+ 
   {
     path:"eliminar-producto",
     component:EliminarProductoComponent
@@ -42,6 +49,8 @@ const routes: Routes = [
     path:"buscar-producto",
     component:BuscarProductoComponent
   },
+ 
+ 
 ];
 
 @NgModule({

@@ -1,1 +1,37 @@
-<p>crear-producto works!</p>
+<div class="row">
+    <h3 class="center-align">Crear Producto</h3>
+    <article class="col s6 offset-s3">
+        <form [formGroup]="fgValidador" (ngSubmit)="GuardarProducto()" method="POST" action="formulario-contacto.php">
+            <div class="input-field"> 
+                <label for ="nombre">Nombre</label> 
+                <input formControlName="nombre" type="text" name="nombre" required> 
+            </div>
+            <div class="input-field"> 
+                <label for ="precio">Precio</label> 
+                <input formControlName="precio" type="text" name="precio" required> 
+            </div>
+            <div class="input-field"> 
+                <label for ="imagen">Imagen</label> 
+                <input formControlName="imagen" type="text" name="imagen"> 
+            </div>
+            <div class="input-field"> 
+                <label for ="marca">Marca</label> 
+                <input formControlName="marca" type="text" name="marca" required> 
+            </div>
+            <div class="input-field"> 
+                <label for ="color">Color</label> 
+                <input formControlName="color"type="text" name="color" required> 
+            </div>
+            <div class="input-field"> 
+                <label for ="cilindraje">Cilindraje</label> 
+                <input formControlName="cilindraje" type="text" name="cilindraje" required> 
+            </div>
+            
+            <div class="center-align">
+                <button [disabled]="!fgValidador.valid" class="waves-effect waves-light btn" type="submit"><i
+                       class="material-icons right">send</i>Enviar</button>
+            </div>
+        </form>
+   </article>
+    
+</div>
