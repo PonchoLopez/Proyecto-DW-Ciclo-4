@@ -1,1 +1,25 @@
-<p>buscar-persona works!</p>
+<table class="table responsive">
+    <thead>
+    <tr>
+        <th>Cedula</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Correo</th>
+        <th>Celular</th>
+        <th>Editar</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of ListadoRegistros">
+            <td>{{p.cedula}}</td>
+            <td>{{p.nombre}}</td>
+            <td>{{p.apellidos}}</td>          
+            <td>{{p.correo}}</td>
+            <td>{{p.celular}}</td>
+
+            <td>
+                <a routerLink="/administracion/editar-persona/{{p.id}}" class="btn">Editar Persona</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

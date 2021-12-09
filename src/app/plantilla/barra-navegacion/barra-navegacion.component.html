@@ -1,11 +1,13 @@
 <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo">ALQUIL.APP</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li *ngIf ="sesionIniciada"><a routerLink="/inicio">Inicio</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/administracion/personas">Usuario</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-producto">Productos</a></li>
+        <li *ngIf ="sesionIniciada"><a routerLink="/administracion/editar-persona/:id">Actualizar datos</a></li>
+        <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-persona">x</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cambioclave">Cambie su contraseña</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar sesión</a></li>
         <li *ngIf ="!sesionIniciada"><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
@@ -18,6 +20,8 @@
     <li *ngIf ="sesionIniciada"><a routerLink="/inicio">Inicio</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/administracion/personas">Usuario</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-producto">Productos</a></li>
+    <li *ngIf ="sesionIniciada"><a routerLink="/administracion/editar-persona/:id">Actualizar datos</a></li>
+    <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-persona">x</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cambioclave">Cambie su contraseña</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar sesión</a></li>
     <li *ngIf ="!sesionIniciada"><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>

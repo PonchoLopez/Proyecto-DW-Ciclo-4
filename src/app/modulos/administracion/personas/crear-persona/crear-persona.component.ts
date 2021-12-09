@@ -41,7 +41,7 @@ export class CrearPersonaComponent implements OnInit {
     p.apellidos = apellidos;
     p.correo = correo;
     p.celular = celular;
-    this.servicioPersona.CrearPersona(p).subscribe((datos: ModeloPersona) =>{
+    this.servicioPersona.CrearPersona(cedula, nombre, apellidos, correo, celular).subscribe((datos: ModeloPersona) =>{
       alert("persona registrada correctamente");
       this.router.navigate(["/administracion/personas"]);
     }, (error: any) =>{

@@ -48,16 +48,20 @@ h2{
 }
 
 .izquierda {
-    background: rgb(255, 255, 255);
+    background: #7ab7bb;
     height: 100vh;
     width: 15%;
+  
 
 }
 
 .d-grid{
     align-items: center;
+    background: #7ab7bb;
+    line-height: 7vh;
+    
+    
 }
-
 .derecha {
     background: #dde1e68e;
     background-size: cover;
@@ -73,10 +77,10 @@ h2{
 .btn{
     color:black;
 
-    background: white;
+    background: #9bc6c9;
     border: white;
 
-    padding: 10px;
+    padding: 4px;
     height: 50;
     width: 90%;
 }
@@ -99,9 +103,13 @@ article{
 img{
     width: 100%;
     max-width: 280px;
+    height: 60%;
+    margin: 15px;
+    
 }
 
 h3{
+    font-size: 40px;
     text-align: center;
 }
 
