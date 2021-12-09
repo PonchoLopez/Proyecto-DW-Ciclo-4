@@ -143,6 +143,7 @@ export class PersonaController {
     return this.personaRepository.updateAll(persona, where);
   }
 
+  @authenticate.skip()
   @get('/personas/{id}')
   @response(200, {
     description: 'Persona model instance',
