@@ -21,9 +21,13 @@ export class CrearProductoComponent implements OnInit {
     'cilindraje': ["", [Validators.required]]
   });
   
+  
+
   constructor(private fb: FormBuilder,
     private servicioProducto: ProductoService,
-    private router: Router) { }
+    private router: Router) { 
+      
+    }
 
   ngOnInit(): void {
     

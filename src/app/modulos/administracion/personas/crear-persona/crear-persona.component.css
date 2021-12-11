@@ -1,0 +1,23 @@
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+
+.row{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

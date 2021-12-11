@@ -36,9 +36,18 @@
               </div>
   
               <br />
+              <br>
+              <form [formGroup]="fgValidador">
+                <ngx-recaptcha2 #captchaElem
+                  [siteKey]="siteKey"
+                  formControlName="recaptcha">
+                </ngx-recaptcha2>
+              </form>
+              <br>
         
                 <div class='row'>
                   <button [disabled]="!fgValidador.valid "type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                  
                 </div>
       
             </form>

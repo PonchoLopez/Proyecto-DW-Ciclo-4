@@ -9,6 +9,7 @@
             <th>Color</th>
             <th>Cilindraje</th>
             <th>Editar</th>
+            <th>Eliminar</th>
         </tr>
     </thead>
     <tbody>
@@ -21,8 +22,9 @@
             <td>{{p.cilindraje}}</td>
             <td>
                 <a routerLink="/administracion/editar-producto/{{p.id}}" class="btn">Editar Producto</a>
+            </td>
+            <td>
                 <a routerLink="/administracion/eliminar-producto/{{p.id}}" class="btn">Eliminar Producto</a>
-
             </td>
         </tr>
 
