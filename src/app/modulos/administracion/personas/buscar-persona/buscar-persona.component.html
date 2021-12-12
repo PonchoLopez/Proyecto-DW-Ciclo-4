@@ -7,6 +7,7 @@
         <th>Correo</th>
         <th>Celular</th>
         <th>Editar</th>
+        <th>Eliminar</th>
     </tr>
     </thead>
     <tbody>
@@ -19,6 +20,9 @@
 
             <td>
                 <a routerLink="/administracion/editar-persona/{{p.id}}" class="btn">Editar Datos</a>
+            </td>
+            <td>
+                <a routerLink="/administracion/eliminar-persona/{{p.id}}" class="btn">Eliminar Usuario</a>
             </td>
         </tr>
     </tbody>

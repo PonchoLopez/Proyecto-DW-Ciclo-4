@@ -4,7 +4,6 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li *ngIf ="sesionIniciada"><a routerLink="/inicio">Inicio</a></li>
-        <li *ngIf ="sesionIniciada"><a routerLink="/administracion/personas">Usuario</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-producto">Productos</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-persona">Actualizar datos</a></li>
         <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar sesión</a></li>
@@ -17,7 +16,6 @@
   <ul class="sidenav" id="mobile-demo">
     <li><a routerLink="/inicio">Inicio</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/inicio">Inicio</a></li>
-    <li *ngIf ="sesionIniciada"><a routerLink="/administracion/personas">Usuario</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-producto">Productos</a></li>
     <li *ngIf ="sesionIniciada"><a routerLink="/administracion/buscar-persona">Actualizar datos</a></li>    
     <li *ngIf ="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar sesión</a></li>

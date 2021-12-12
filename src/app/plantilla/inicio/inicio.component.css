@@ -50,7 +50,7 @@ h2{
 
 .izquierda {
     background: #00b8d4;
-    height: 76vh;
+    height: 86vh;
     width: 15%;
   
 
@@ -68,7 +68,7 @@ h2{
     background-size: cover;
     background-position: center;
     width: 85%;
-    height:80vh;
+    height:180vh;
 }
 
 #pantalla-dividida {
@@ -207,3 +207,4 @@ font-size: 15px;
         padding: 35px 0px;
     }
 }
+
