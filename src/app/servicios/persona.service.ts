@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { ModeloPersona } from '../modelos/persona.modelo';
 import { SeguridadService } from './seguridad.service';
 
@@ -10,6 +10,8 @@ import { SeguridadService } from './seguridad.service';
 export class PersonaService {
   token: String = "";
   url= 'http://localhost:3000'
+
+  datosUsuarioEnSesion = new BehaviorSubject <ModeloPersona> (new ModeloPersona());
 
   constructor(private http: HttpClient,
     private seguridadServicio: SeguridadService) {
@@ -50,4 +52,13 @@ export class PersonaService {
   ObtenerRegistroPorId(id:string):Observable<ModeloPersona>{
     return this.http.get<ModeloPersona>(`http://localhost:3000/personas/${id}`);
   }
+
+  //ObtenerRegistroUsuario(id:string): Observable<ModeloPersona>{
+    //return this.http.get<ModeloPersona>(`${this.url}/personas/${id}`);
+    //}
+
+    ObtenerDatosUsuarioSesion(){
+      return this.datosUsuarioEnSesion.asObservable();
+    }
+
 }

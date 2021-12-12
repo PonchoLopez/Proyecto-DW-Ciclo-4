@@ -31,6 +31,7 @@ const routes: Routes = [
     canActivate: [ValidadorSesionGuard]
   },
 
+
   {
     path:"buscar-producto",
     component:BuscarProductoComponent,

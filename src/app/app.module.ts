@@ -17,7 +17,8 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     BarraNavegacionComponent,
     PiePaginaComponent,
     InicioComponent,
-    ErrorComponent
+    ErrorComponent,
+   
   ],
   imports: [
     BrowserModule,

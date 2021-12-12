@@ -48,7 +48,7 @@ export class EditarPersonaComponent implements OnInit {
      
     this.servicioPersona.ActualizarPersona(p).subscribe((datos: ModeloPersona) =>{
       alert("datos personales editados correctamente");
-      this.router.navigate(["/administracion/personas"]);
+      this.router.navigate(["/administracion/buscar-persona"]);
     }, (error: any) =>{
       alert("error editando sus datos");
     }

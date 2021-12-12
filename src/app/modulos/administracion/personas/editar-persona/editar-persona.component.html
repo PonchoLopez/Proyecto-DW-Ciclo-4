@@ -1,37 +1,48 @@
-<div class="row">
-    <form [formGroup]="fgValidador" (ngSubmit)="EditarPersona()" method="POST" action="formulario-contacto.php">
+<div class="container">
+  <form [formGroup]="fgValidador" (ngSubmit)="EditarPersona()" method="POST" action="formulario-contacto.php">
+      <input type="hidden" formControlName="id"/>
+      
       <div class="row">
-          <input type="hidden" formControlName="id"/>
-        <div class="input-field col s6">
-            <input formControlName="cedula" type="text" class="validate">
-            <label for="Cedula">Cedula</label>
+        <div class="input col s6" style="width: 285.5px;">
+          <label for="cedula">Cedula</label>
+          <input formControlName="cedula" type="text" class="validate" readonly>
         </div>
-        <div class="input-field col s6">
-          <input formControlName="nombre" type="text" class="validate">
-          <label for="Nombre">Nombre</label>
+      </div>
+
+      <div class="row">
+        <div class="input col s6" style="width: 285.5px;">
+          <label for="nombre">Nombre</label>
+          <input formControlName="nombre" type="text" class="validate">  
         </div>
-        <div class="input-field col s6">
+      </div>
+
+      <div class="row">
+        <div class="input col s6" style="width: 285.5px;">
+          <label for="apellidos">Apellidos</label>
           <input formControlName="apellidos" type="text" class="validate">
-          <label for="Apellidos">Apellidos</label>
         </div>
       </div>
+
       <div class="row">
-        <div class="input-field col s12">
-          <input formControlName="correo" type="email" class="validate">
-          <label for="Correo">Correo</label>
+        <div class="input col s12" style="width: 285.5px;">
+          <label for="correo">Correo</label>
+          <input formControlName="correo" type="email" class="validate" readonly> 
         </div>
       </div>
+
       <div class="row">
-      <div class="input-field col s6">
-        <input formControlName="celular" type="text" class="validate">
-        <label for="Celular">Celular</label>
+        <div class="input col s6" style="width: 285.5px;">
+          <label for="celular">Celular</label>
+          <input formControlName="celular" type="text" class="validate">  
+        </div>
       </div>
-    </div>
 
-
-    <button class="btn waves-effect waves-light" type="submit" name="action">Editar
-    <i class="material-icons right"></i>
-  </button>
+      <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Editar
+      <i class="material-icons right"></i>
+      </button>
+      </div>
     
-    </form>
-  </div>
+  </form>
+</div>
+

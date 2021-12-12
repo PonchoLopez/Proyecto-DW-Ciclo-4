@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { ActivatedRoute, Route } from '@angular/router';
 import { ModeloPersona } from 'src/app/modelos/persona.modelo';
 import { PersonaService } from 'src/app/servicios/persona.service';
 
@@ -10,11 +11,14 @@ import { PersonaService } from 'src/app/servicios/persona.service';
 export class BuscarPersonaComponent implements OnInit {
 
   ListadoRegistros:ModeloPersona[]=[];
-
-  constructor(private servicioPersona: PersonaService) { }
+ 
+  constructor(private servicioPersona: PersonaService) { 
+    
+  }
 
   ngOnInit(): void {
     this.ObtenerListadoPersonas();//cambio dudoso
+    
   }
 
   
@@ -23,5 +27,5 @@ export class BuscarPersonaComponent implements OnInit {
       this.ListadoRegistros =datos;
     })
   }
-
+  
 }

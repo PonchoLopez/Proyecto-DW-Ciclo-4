@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxCaptchaModule } from 'ngx-captcha';
 
 
+
 @NgModule({
   declarations: [
     BuscarPersonaComponent,
@@ -23,7 +24,8 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     CrearProductoComponent,
     EditarProductoComponent,
     EliminarProductoComponent,
-    BuscarProductoComponent
+    BuscarProductoComponent,
+
   ],
   imports: [
     CommonModule,

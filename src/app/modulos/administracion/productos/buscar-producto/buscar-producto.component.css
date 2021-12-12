@@ -1,3 +1,14 @@
 .imagenProducto{
     width: 100px;
 }
+
+.table{
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+.row{
+    margin-left: 5%; 
+} 
+
